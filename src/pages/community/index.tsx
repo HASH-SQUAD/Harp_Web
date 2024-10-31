@@ -6,7 +6,7 @@ import * as _ from './style';
 import Search from 'assets/image/Search';
 import { theme } from 'lib/utils/style/theme';
 import MenuBar from 'components/MenuBar';
-import PreviewCard from 'components/community/PreviewCard';
+import PreviewCard from 'components/PreviewCard';
 import Edit from 'assets/Icon/Edit';
 import { PreviewData } from 'data/PreviewData';
 
@@ -58,7 +58,6 @@ const Community = () => {
       {PreviewData.length > 0 ? (
         <_.Community_PostList>
           {PreviewData.map((post) => (
-            <_.Community_Link to={`/community/detail/${post.communityId}`} key={post.communityId}>
             <PreviewCard
               key={post.communityId}
               title={post.title}
@@ -67,7 +66,6 @@ const Community = () => {
               commentCount={post.commentCount}
               updatedAt={post.updatedAt}
             />
-            </_.Community_Link>
           ))}
         </_.Community_PostList>
       ) : (

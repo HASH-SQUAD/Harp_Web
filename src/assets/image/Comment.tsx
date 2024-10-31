@@ -1,15 +1,11 @@
 import React from 'react';
 
-interface CommentProps {
-  width?: string;
-  height?: string;
-}
-const Comment = ({ width = '16', height = '16' }: CommentProps) => {
+const Comment = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={width}
-      height={height}
+      width="16"
+      height="16"
       viewBox="0 0 14 14"
       fill="none"
     >

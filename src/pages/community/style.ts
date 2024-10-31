@@ -1,5 +1,4 @@
 import { theme } from 'lib/utils/style/theme';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Community_Layout = styled.div`
@@ -130,10 +129,4 @@ export const Community_Writing = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
-
-export const Community_Link = styled(Link)`
-  text-decoration: none;
-  display: flex;
-  width: 100%; 
 `;
